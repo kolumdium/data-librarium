@@ -1,5 +1,9 @@
 # Data Librarium
 
+## Webpage
+
+If you are just here for [the website click here](https://kolumdium.github.io/data-librarium/)
+
 ## Description
 
 This repository serves as a comprehensive catalog of diverse datasets, categorized by various aspects, with detailed information on aggregation methods, usage, and visualization options for each data topic. Documentation is structured and maintained in Obsidian for a streamlined and user-friendly experience.
