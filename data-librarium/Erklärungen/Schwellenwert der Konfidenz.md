@@ -1,0 +1,2 @@
+Im Idealfall sind die Daten immer direkt vor Ort nachprüfbar. Dieser Idealfall kann aber nicht immer erfüllt werden. Deshalb können diese Aussagen nicht mit 100 %-tiger [[Konfidenz]] getroffen werden. Es wird ein [[Schwellenwert der Konfidenz]] festgelegt ab welchem Behauptungen als Wahr angenommen werden.
+Die Autoren gehen davon aus, dass eine Konfidenz von 95% ausreichend ist. Eine Prüfung dieses Schwellenwertes ist aber noch notwendig und stark davon abhängig welche Anwendungen getätigt werden.
