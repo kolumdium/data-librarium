@@ -8,28 +8,47 @@ Darüber hinaus beeinflussen diese Daten den **Energieverbrauch**. Steigungen er
 
 ## Szenarien
 
-1. 
+1.  Lieferroboter
+	1. Differenzieller Antrieb
+	2. ca. 80 x 60 cm 
+	3. Sensoren
+		1. Lidar
+			1. vorn
+			2. hinten
+		2. Stereokameras
+			1. Front
+			2. Seite
+			3. Hinten
+		3. GPS
+		4. IMU
+		5. Odometry
+2.  Lastenrad
+	1. Ackerman Steuerung
+	2. ca. 2,5 x 1,0 m
+	3. Sensoren
+		1. Kameras vorne
+		2. Lidar 
 
 ## Steckbrief
 ### [[Szenario-abhängige Parameter]]
 
-| Anforderungen                                                          | [[Szenario 1]] | [[Szenario 2]] | [[Szenario 3]] | [[Szenario 4]] | [[Szenario 5]] |
-| ---------------------------------------------------------------------- | -------------- | -------------- | -------------- | -------------- | -------------- |
-| [[Temporale Auflösung]]                                                |                |                |                |                |                |
-| [[Kritikalität der TA]]                                                |                |                |                |                |                |
-| [[Lokale Auflösung]]                                                   |                |                |                |                |                |
-| [[Kritikalität der LA]]                                                |                |                |                |                |                |
-| [[Datenquellen]]                                                       |                |                |                |                |                |
-| [[Generierende Sensoren]]                                              |                |                |                |                |                |
-| [[Generierende Verarbeitungen]]                                        |                |                |                |                |                |
-| [[Weiterführende Verarbeitung für]]                                    |                |                |                |                |                |
-| [[Relevanz der Vollständigkeit]]                                       |                |                |                |                |                |
-| [[Relevanz der Richtigkeit]]                                           |                |                |                |                |                |
-| [[Operationale Wichtigkeit]] (ist das nicht die Summe der Relevanzen?) |                |                |                |                |                |
-| Zeitverlust durch Fehlerhafte Angaben                                  |                |                |                |                |                |
-| Zeitverlust durch Schätzen                                             |                |                |                |                |                |
-|                                                                        |                |                |                |                |                |
-
+| Anforderungen                                                          | [[Szenario 1]]                                                     | [[Szenario 2]]                                 |
+| ---------------------------------------------------------------------- | ------------------------------------------------------------------ | ---------------------------------------------- |
+| [[Temporale Auflösung]]                                                | Bei Begin der Planung                                              | Bei Begin der Planung                          |
+| [[Kritikalität der TA]]                                                | gering[^1]                                                         | gering[^1]                                     |
+| [[Lokale Auflösung]]                                                   | max. Wert zwischen Hauseingängen                                   | $m^2$                                          |
+| [[Kritikalität der LA]]                                                | hoch                                                               | hoch                                           |
+| [[Datenquellen]]                                                       | [[Berechnung#GPS\|GPS]], IMU, Lidar + IMU, Community, [[Kataster]] | GPS, IMU, Lidar + IMU, Community, Kataster     |
+| [[Generierende Sensoren]]                                              |                                                                    |                                                |
+| [[Generierende Verarbeitungen]]                                        | [[Berechnung]]                                                     | Berechnung                                     |
+| [[Weiterführende Verarbeitung für]]                                    | Energieaufwand, Geschwindigkeit, Routenplanung                     | Energieaufwand, Geschwindigkeit, Routenplanung |
+| [[Relevanz der Vollständigkeit]]                                       | Fehlen könnte zur Neuplanung führen                                | Fehlen könnte zur Neuplanung führen            |
+| [[Relevanz der Richtigkeit]]                                           | Falsche Angaben könnten zur Neuplanung führen                      | Falsche Angaben könnten zur Neuplanung führen  |
+| [[Operationale Wichtigkeit]] (ist das nicht die Summe der Relevanzen?) |                                                                    |                                                |
+| Zeitverlust durch Fehlerhafte Angaben                                  | gering                                                             | gering                                         |
+| Zeitverlust durch Schätzen                                             | gering                                                             | gering                                         |
+|                                                                        |                                                                    |                                                |
+[^1]: Anstieg ändert sich nur selten
 ### Szenario Übergreifende Parameter
 
 | Parameter       | Bewertung  |
@@ -41,7 +60,7 @@ Darüber hinaus beeinflussen diese Daten den **Energieverbrauch**. Steigungen er
 Wo muss die Information vorhanden sein?
 
 ### Richtgrößen
-Datenmenge bei Darstellung in verschiedenen Abbildungen.
+float 32 
 
 
 ## Detaillierte Antworten
