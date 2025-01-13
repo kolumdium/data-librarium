@@ -1,1 +1,11 @@
-{}
+{
+	"nodes":[
+		{"id":"bd59e3db4711e5af","x":-384,"y":236,"width":400,"height":400,"type":"file","file":"Szenarios/Szenario 1.md"},
+		{"id":"ea2c026f06798b1e","x":125,"y":236,"width":400,"height":400,"type":"file","file":"Konzepte/Anstieg/Anstieg.md"},
+		{"id":"9299076df93b68f8","x":-40,"y":0,"width":250,"height":60,"type":"text","text":"Example"}
+	],
+	"edges":[
+		{"id":"cfc8edd83e1c57f8","fromNode":"9299076df93b68f8","fromSide":"bottom","toNode":"bd59e3db4711e5af","toSide":"top"},
+		{"id":"8da5a08240fc952b","fromNode":"9299076df93b68f8","fromSide":"bottom","toNode":"ea2c026f06798b1e","toSide":"top"}
+	]
+}
